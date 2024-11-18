@@ -1,8 +1,4 @@
-# Kanban - Cadastro de Tarefas e Usuários
-
-## Descrição
-
-Este projeto é uma aplicação simples de gerenciamento de tarefas e usuários utilizando um sistema Kanban. O objetivo é permitir o cadastro de tarefas e usuários, facilitando a organização e o acompanhamento das atividades.
+# Kanban
 
 ## Tecnologias Utilizadas
 
@@ -40,5 +36,4 @@ node index.js
   - Permite o registro de novos usuários com nome e e-mail.
   - Integração com uma API para o armazenamento dos usuários.
 
-## Licença
-Este projeto é licenciado sob a Licença MIT. Para mais detalhes, consulte o arquivo LICENSE.
+
