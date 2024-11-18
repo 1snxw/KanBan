@@ -1,0 +1,111 @@
+/* Variáveis globais */
+:root {
+    --font-primary: Tahoma;
+    --color-bg-header: rgb(0, 100, 200);
+    --color-bg-hover: rgb(0, 87, 173);
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0, 0, 0);
+    --border-radius: 8px;
+    --padding-btn: 6px;
+    --padding-input: 8px;
+    --font-size-title: 20px;
+    --font-size-link: 16px;
+    --grid-gap: 40px;
+    --card-width: 400px;
+    --margin-standard: 20px;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos principais */
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-white);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-bg-header);
+    padding: 12px;
+}
+
+.title {
+    font-size: var(--font-size-title);
+    color: var(--color-white);
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-white);
+    font-size: var(--font-size-link);
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+}
+
+/* Contêineres de formulário */
+.usuario,
+.tarefa {
+    margin: var(--margin-standard);
+}
+
+/* Campos de entrada */
+input {
+    padding: var(--padding-input);
+    border: 1.5px solid var(--color-black);
+    border-radius: var(--border-radius);
+    margin: 8px 0;
+}
+
+/* Botões */
+button {
+    padding: var(--padding-btn);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-header);
+    color: var(--color-white);
+    border: 1px solid var(--color-black);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-bg-hover);
+}
+
+/* Campos de seleção */
+select {
+    border-radius: var(--border-radius);
+    padding: 4px;
+}
+
+/* Contêiner e cartões de lista */
+.lista-container,
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(3, var(--card-width));
+    gap: var(--grid-gap);
+    margin-left: 30px;
+}
+
+.card {
+    border: 1px solid var(--color-black);
+    border-radius: var(--border-radius);
+    padding: var(--padding-input);
+    margin-bottom: var(--margin-standard);
+}
